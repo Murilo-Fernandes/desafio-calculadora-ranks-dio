@@ -1,4 +1,6 @@
-def definirRank(vitorias, derrotas):
+def definirRank():
+    vitorias = int(input("Digite o número de vitórias: "))
+    derrotas = int(input("Digite o número de derrotas: "))
     rankHero = ""
     saldoVitorias = vitorias - derrotas
     if (saldoVitorias <= 10):
@@ -17,6 +19,6 @@ def definirRank(vitorias, derrotas):
         rankHero = "Imortal"       
     return f"O herói tem o saldo de {saldoVitorias} e está no nível de {rankHero}"
 
-resultado = definirRank(82,35)
+resultado = definirRank()
 
 print(resultado)
